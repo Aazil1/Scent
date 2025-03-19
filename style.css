@@ -1,0 +1,148 @@
+.body{
+    background-image: url(../Users/admin/Desktop/green-abstract-background-green-background-design-abstract-futuristic-background-green-modern-background-green-abstract-background-for-templates-cards-and-websites-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+
+}
+li{
+    list-style: none;
+}
+
+.ads{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.ads:hover{
+    color: rgb(0, 0, 0);
+    border: 3px solid  rgb(57, 102, 55);
+    border-radius: 10px;
+    transition: color 0.1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+
+.ads{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+
+}
+
+.info{
+    text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        
+    }
+
+header{
+    position: relative;
+    padding: 0 2 rem;
+}
+
+.nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.nav .logo a{
+ font-size: 40px;
+ font-weight: bold;
+ font-style: italic;
+}
+
+.logo{
+    display: none;
+    display: flex;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(47, 100, 58);
+    margin-left: 300px;
+
+}
+
+.nav .links{
+display: flex;
+gap: 2rem;
+margin-right: 250px;
+}
+
+.links a{
+    font-size: x-large;
+    color: rgb(214, 189, 152);
+}
+
+.nav .toggle_btn{
+    display: flex;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(214, 189, 152);
+    font-size: 1rem;
+
+}
+
+.Nav{
+    padding: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    margin-right: 1000px;
+    border: solid gray 1px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .Nav1{
+        padding: auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 500px;
+        margin-right: 1000px;
+        border: solid gray 1px;
+        border-radius: 10px;
+        width: 500px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .Nav2{
+        padding: auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 500px;
+        margin-right: 500px;
+        border: solid gray 1px;
+        border-radius: 10px;
+        width: 500px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .ds{
+                color: white;
+                font-size: large;
+                font-weight: bold;
+                font-size: xx-large;
+            }

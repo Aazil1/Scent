@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click the Box Game</title>
+<style>
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(c:\Users\admin\Desktop\green-abstract-background-green-background-design-abstract-futuristic-background-green-modern-background-green-abstract-background-for-templates-cards-and-websites-free-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+
+  }
+
+  .game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #375f3c;
+    border: 2px solid #ffffff;
+    overflow: hidden;
+  }
+
+  .target {
+    width: 50px;
+    height: 50px;
+    background-color: #b6ca5a;
+    position: absolute;
+    cursor: pointer;
+    transition: top 0.3s, left 0.3s;
+  }
+
+  .score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  h3{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <h3>
+    ARE YOUR EYES AND HANDS FAST ENOUGH?
+  </h3>
+<div class="game-container">
+  <div class="target"></div>
+</div>
+<div class="score">Score: <span id="score">0</span></div>
+
+<script>
+  // JavaScript to move the box and track score
+  const target = document.querySelector('.target');
+  const scoreDisplay = document.getElementById('score');
+  let score = 0;
+
+  function moveTarget() {
+    const gameContainer = document.querySelector('.game-container');
+    const containerRect = gameContainer.getBoundingClientRect();
+    const targetSize = 50;
+
+    const randomX = Math.random() * (containerRect.width - targetSize);
+    const randomY = Math.random() * (containerRect.height - targetSize);
+
+    target.style.left = `${randomX}px`;
+    target.style.top = `${randomY}px`;
+  }
+
+  target.addEventListener('click', () => {
+    score++;
+    scoreDisplay.textContent = score;
+    moveTarget();
+  });
+
+  // Start the game by moving the target initially
+  moveTarget();
+</script>
+
+</body>
+</html>
